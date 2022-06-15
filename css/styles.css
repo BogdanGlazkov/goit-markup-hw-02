@@ -50,7 +50,7 @@ color: var(--title-text-color);
 text-decoration: none;
 }
 
-.site-nav .current {
+.site-nav .link.current a {
 color: var(--accent-color);
 }
 
@@ -84,7 +84,7 @@ text-transform: uppercase;
 .hero-button {
 background-color: #2196F3;
 color: #FFFFFF;
-font-family: 'Roboto';
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -92,6 +92,8 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+
+cursor: pointer;
 }
 
 /* Особенности */
@@ -109,7 +111,6 @@ text-transform: uppercase;
 
 .features-text {
 color: var(--primary-text-color);
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 }
@@ -142,7 +143,6 @@ text-align: center;
 
 .team-position {
 color: var(--primary-text-color);
-font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
@@ -177,5 +177,38 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 
+.address a:hover,
+.address a:focus {
+color: var(--accent-color);
+}
 
 /* Стили для Портфолио */
+
+/* Портфолио */
+
+.portfolio-filter {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.portfolio-filter :hover,
+.portfolio-filter :focus {
+color: var(--background-color);
+background-color: var(--accent-color);
+}
+
+.project-name {
+font-weight: 700;
+font-size: 18px;
+line-height: 0.2;
+letter-spacing: 0.06em;
+}
+
+.project-type {
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+}
